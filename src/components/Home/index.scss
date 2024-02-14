@@ -15,12 +15,10 @@
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
-        font-weight: 400;
+        font-weight: 40;
 
         &::before {
-            content: '<h1>';
             font-family: 'La Belle Aurore';
-            font-weight: bold;
             color: black;
             font-size: 18px;
             position: absolute;
@@ -30,9 +28,7 @@
         }
 
         &::after {
-            content: '<h1/>';
             font-family: 'La Belle Aurore';
-            font-weight: bold;
             color: black;
             font-size: 18px;
             position: absolute;
@@ -46,7 +42,7 @@
     h2 {
         color: white;
         margin-top: 20px;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 11px;
         font-family: sans-serif;
         letter-spacing: 3px;

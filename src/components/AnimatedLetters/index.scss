@@ -11,9 +11,19 @@
     margin-right: 20px; 
 }
 
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: black;
+    }
+}
 
 
-@for $i from 1 through 37 {
+@for $i from 1 through 45 {
     .text-animate._#{$i} {
         animation-delay: #{$i / 10}s;
     }
