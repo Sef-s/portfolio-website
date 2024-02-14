@@ -20,6 +20,7 @@
         &::before {
             content: '<h1>';
             font-family: 'La Belle Aurore';
+            font-weight: bold;
             color: black;
             font-size: 18px;
             position: absolute;
@@ -31,7 +32,8 @@
         &::after {
             content: '<h1/>';
             font-family: 'La Belle Aurore';
-            color: white;
+            font-weight: bold;
+            color: black;
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
