@@ -47,17 +47,11 @@ useEffect(() => {
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                 <a href={Resume} className='flat-button2' download="YusefTohamy-Resume.pdf">RESUME</a>
             </div>
-            <div className="about-me">
-            {aboutMeLines.map((line, index) => (
-                <p key={index} className="about-me-line">
-                    {line.map((char, charIndex) => (
-                        <span key={charIndex} className="about-me-char">
-                            {char}
-                        </span>
-                    ))}
-                </p>
-            ))}
-        </div>
+            <div class="card">
+                <div class="card__content">
+                    <h3>About me</h3>
+                </div>
+            </div>
         </div>
     );
 }
