@@ -28,7 +28,7 @@
         display: block;
         text-align: center;
         position: absolute;
-        height: 210px;
+        height: 600px;
         top: 50%;
         margin-top: -120px;
         width: 100%;
@@ -37,10 +37,11 @@
             font-size: 22px;
             color: white;
             display: block;
-            line-height: 51px;
-            height: 51px;
+            line-height: 51px; /* Adjust as needed */
+            height: 51px; /* Adjust as needed */
             position: relative;
             text-decoration: none;
+            margin-bottom: 20px; /* Add spacing between navigation links */
 
             i {
                 transition: all 0.3s ease-out;
@@ -78,9 +79,9 @@
             }
         }
 
-        a.about-link {
+        a.skills-link {
             &:after {
-                content: 'ABOUT';
+                content: 'SKILLS';
             }
         }
 

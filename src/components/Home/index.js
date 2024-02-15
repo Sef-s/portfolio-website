@@ -2,11 +2,22 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import Resume from '../../assets/Files/YusefTohamy-Resume.pdf'
 
 const Home = () => {
 const [letterClass, setLetterClass] = useState('text-animate')
 const nameArray = ['y', 'u', 's', 'e', 'f']
 const jobArray = ['a', ' ', 's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
+const aboutMeLines = [
+    'Passionate software engineer with a knack for problem-solving.'.split(''),
+    'Co-founder of Lead Emporium, leveraging Python and Selenium.'.split(''),
+    'Enjoy tackling complex coding challenges.'.split(''),
+    'Equipped with a diverse technical toolkit, ready to build robust, scalable applications.'.split('')
+  ];
+  
+
+  
+  
 
 useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,7 +45,19 @@ useEffect(() => {
                 </h1>
                 <h2>Backend Developer / Python Engineer / Entrepreneur</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                <a href={Resume} className='flat-button2' download="YusefTohamy-Resume.pdf">RESUME</a>
             </div>
+            <div className="about-me">
+            {aboutMeLines.map((line, index) => (
+                <p key={index} className="about-me-line">
+                    {line.map((char, charIndex) => (
+                        <span key={charIndex} className="about-me-char">
+                            {char}
+                        </span>
+                    ))}
+                </p>
+            ))}
+        </div>
         </div>
     );
 }

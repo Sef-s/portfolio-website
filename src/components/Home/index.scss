@@ -1,10 +1,9 @@
 .home-page {
-
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 50%;
-        transform: translateY( -50% );
+        top: 0%;
+        transform: translateY( 0% );
         width: 40%;
         max-height: 90%;
     }
@@ -16,6 +15,7 @@
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 40;
+        position: relative; 
 
         &::before {
             font-family: 'La Belle Aurore';
@@ -59,7 +59,29 @@
         padding: 10px 18px;
         border: 1px solid white;
         margin-top: 25px;
-        float: left;
+        display: inline-block; 
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        display: inline-block;
+
+        &:hover {
+            background: white;
+            color: rgb(56, 56, 125);
+        }
+    }
+
+    .flat-button2 {
+        color: white;
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid white;
+        position: absolute;
+        right: 400px;
+        bottom: 0px;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
 
@@ -68,4 +90,27 @@
             color: rgb(56, 56, 125);
         }
     }
+    .about-me {
+        position: absolute;
+        right: 10%;
+        top: 15%;
+        transform: translateY(-50%);
+        width: 40%;
+        padding: 2rem;
+        background-color: #49556B; // This is the color from the example you provided
+        color: white;
+        border-radius: 0.8rem;
+        box-shadow: 5px 5px 20px #6d6b6b6b;
+        font-size: 20px; // Adjust as needed
+        font-family: 'Coolvetica', sans-serif;
+      
+        .about-me-line {
+            display: flex; // This will align characters in a line
+            flex-wrap: wrap; // This allows the line to wrap as needed
+          }
+          
+          .about-me-char {
+            margin-right: 0.1em; // Adjust the spacing between characters
+          }
+      }        
 }
