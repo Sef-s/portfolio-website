@@ -73,10 +73,9 @@
         white-space: nowrap;
         cursor: pointer;
         margin-top: 25px;
-        margin-right: 20px; /* Added to spread out the buttons */
+        margin-right: 20px;
     }
     
-    /* Remove right margin from the last button */
     .contact-link:last-child, .resume-link:last-child {
         margin-right: 0;
     }
@@ -130,11 +129,11 @@
     }
 
     .card__content h3 {
-        padding-bottom: 0px; /* Space between text and line */
-        border-bottom: 2px solid white; /* The line under the text */
-        display: inline-block; /* Ensures the line is only as wide as the text */
-        margin-bottom: 20px; /* Space below the line before any other content */
-      }
+        padding-bottom: 0px;
+        border-bottom: 2px solid white;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
 
     .card__content > * {
         margin-top: -5px;
@@ -160,29 +159,26 @@
         letter-spacing: normal;
         font-size: 13px;
         font-weight: 300;
-        font-weight: 0;
     }
 
     .iframe1, .iframe2 {
-        width: 300px; /* Match the width of the card */
-        height: 300px; /* Match the height of the card */
+        width: 300px;
+        height: 300px;
         border-radius: 20px;
         box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
         overflow: hidden;
-      }
-      
-      /* Optional: If you want to create a similar gradient background behind the iframes */
-      .iframe-container {
+    }
+
+    .iframe-container {
         background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
         padding: 5px;
-        border-radius: 20px; /* Matches the card border radius */
-        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; /* Matches the card shadow */
-        margin-left: 73.5%; /* You may need to adjust this for alignment */
+        border-radius: 20px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        margin-left: 73.5%;
         margin-top: -29%;
-        width: 300px; /* Match the width of the card */
-        height: 352px; /* Ensure the container does not exceed the height of the iframe */
-      }
-      
+        width: 300px;
+        height: 352px;
+    }
 
     @media screen and (max-width: 1200px) {
         .tags, .home-page h1:before, .home-page h1:after {
@@ -200,8 +196,8 @@
         .home-page .contact-link, .home-page .resume-link {
             float: none;
             display: block;
-            margin: 20px auto; /* Adjusted to center the buttons and provide vertical spacing */
-            width: auto; /* Adapt width to content */
+            margin: 20px auto;
+            width: auto;
         }
     }
 }
