@@ -4,7 +4,7 @@ import LogoY from '../../assets/images/logo-Y.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser, faGear } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
     <div className='nav-bar'>
@@ -20,7 +20,7 @@ const Sidebar = () => (
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="white" />
-            </NavLink>
+            </NavLink>  
         </nav>
         <ul>
             <li>
@@ -36,6 +36,11 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel='noreferer' href='https://www.instagram.com/yusef.t/'>
                     <FontAwesomeIcon icon={faInstagram} color="white" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferer' href='https://open.spotify.com/user/0hzbdvn9dm263s5fdfbg3h5be'>
+                    <FontAwesomeIcon icon={faSpotify} color="white" />
                 </a>
             </li>
         </ul>

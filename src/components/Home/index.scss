@@ -108,8 +108,9 @@
 
     .card {
         width: 300px;
-        margin-left: 60%;
-        height: 450px;
+        margin-left: 48%;
+        margin-top: 5%;
+        height: 352px;
         border-radius: 20px;
         padding: 5px;
         box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -118,11 +119,6 @@
 
     .card__content {
         background: rgb(5, 6, 45);
-        color: white;
-        font-family: 'Coolvetica';
-        letter-spacing: normal;
-        font-size: 25px;
-        font-weight: 50;
         border-radius: 17px;
         width: 100%;
         height: 100%;
@@ -133,9 +129,60 @@
         text-align: center;
     }
 
+    .card__content h3 {
+        padding-bottom: 0px; /* Space between text and line */
+        border-bottom: 2px solid white; /* The line under the text */
+        display: inline-block; /* Ensures the line is only as wide as the text */
+        margin-bottom: 20px; /* Space below the line before any other content */
+      }
+
     .card__content > * {
         margin-top: -5px;
     }
+
+    .aboutme {
+        margin-top: 0%;
+        color: white;
+        font-family: 'Coolvetica';
+        letter-spacing: normal;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .aboutme-content {
+        line-height: 1.6;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 5%;
+        color: white;
+        font-family: 'Coolvetica';
+        letter-spacing: normal;
+        font-size: 13px;
+        font-weight: 300;
+        font-weight: 0;
+    }
+
+    .iframe1, .iframe2 {
+        width: 300px; /* Match the width of the card */
+        height: 300px; /* Match the height of the card */
+        border-radius: 20px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        overflow: hidden;
+      }
+      
+      /* Optional: If you want to create a similar gradient background behind the iframes */
+      .iframe-container {
+        background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+        padding: 5px;
+        border-radius: 20px; /* Matches the card border radius */
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; /* Matches the card shadow */
+        margin-left: 73.5%; /* You may need to adjust this for alignment */
+        margin-top: -29%;
+        width: 300px; /* Match the width of the card */
+        height: 352px; /* Ensure the container does not exceed the height of the iframe */
+      }
+      
 
     @media screen and (max-width: 1200px) {
         .tags, .home-page h1:before, .home-page h1:after {

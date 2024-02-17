@@ -8,12 +8,7 @@ const Home = () => {
 const [letterClass, setLetterClass] = useState('text-animate')
 const nameArray = ['y', 'u', 's', 'e', 'f']
 const jobArray = ['a', ' ', 's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
-const aboutMeLines = [
-    'Passionate software engineer with a knack for problem-solving.'.split(''),
-    'Co-founder of Lead Emporium, leveraging Python and Selenium.'.split(''),
-    'Enjoy tackling complex coding challenges.'.split(''),
-    'Equipped with a diverse technical toolkit, ready to build robust, scalable applications.'.split('')
-  ];
+const aboutMe = ["Hello! I'm Yusef Tohamy, a Computer Science major at Temple University with a fervor for technology and its application in solving real-world problems. My entrepreneurial spirit led me to co-found Lead Emporium LLC, where I utilized Python to automate business operations, boosting efficiency and revenue. Specializing in software development and data analysis, I thrive on tackling complex challenges with innovative solutions. My ambition is fueled by the belief in technology's power to drive business success and create positive, impactful change."]
 
 useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,12 +41,15 @@ useEffect(() => {
                 <a href={Resume} className="resume-link" download="YusefTohamy-Resume.pdf" role="button">
                     <span class="text">RESUME</span>
                 </a>
-
             </div>
             <div class="card">
                 <div class="card__content">
-                    <h3>About me</h3>
+                    <h3 className='aboutme'>About me</h3>
+                        <p className='aboutme-content'>{aboutMe}</p>
                 </div>
+            </div>
+            <div className="iframe-container">
+                <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/playlist/0Kdjb5J2fFZWtKnCx2cBQb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
             </div>
         </div>
     );
