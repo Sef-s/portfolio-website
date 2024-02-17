@@ -1,14 +1,16 @@
-html {
+html, body {
   font-size: 62.5%;
+  height: 100%;
+  margin: 0;
 }
 
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Hellvetica Neue', 'sans-serif';
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: black;
-  background: rgb(56, 56, 125);
-  overflow: hidden;
+  background: radial-gradient(circle at top left, #690893, #4046ed);
+  background-attachment: fixed;  overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

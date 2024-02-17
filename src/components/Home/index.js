@@ -14,10 +14,6 @@ const aboutMeLines = [
     'Enjoy tackling complex coding challenges.'.split(''),
     'Equipped with a diverse technical toolkit, ready to build robust, scalable applications.'.split('')
   ];
-  
-
-  
-  
 
 useEffect(() => {
     const timer = setTimeout(() => {
