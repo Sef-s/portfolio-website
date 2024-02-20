@@ -5,18 +5,17 @@ import { useEffect, useState } from 'react';
 import Resume from '../../assets/Files/YusefTohamy-Resume.pdf'
 
 const Home = () => {
-const [letterClass, setLetterClass] = useState('text-animate')
-const nameArray = ['y', 'u', 's', 'e', 'f']
-const jobArray = ['a', ' ', 's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
-const aboutMe = ["Hello! I'm Yusef Tohamy, a Computer Science major at Temple University with a fervor for technology and its application in solving real-world problems. My entrepreneurial spirit led me to co-found Lead Emporium LLC, where I utilized Python to automate business operations, boosting efficiency and revenue. Specializing in software development and data analysis, I thrive on tackling complex challenges with innovative solutions. My ambition is fueled by the belief in technology's power to drive business success and create positive, impactful change."]
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const nameArray = ['y', 'u', 's', 'e', 'f']
+    const jobArray = ['a', ' ', 's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r', '.']
 
-useEffect(() => {
-    const timer = setTimeout(() => {
-        setLetterClass('text-animate-hover');
-    }, 4000); // Adjust the timeout duration as needed
-
-    return () => clearTimeout(timer);
-}, []);
+    useEffect(() => {
+    
+        const timer = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000); // Adjust the timeout duration as needed
+        return () => clearTimeout(timer);
+    }, []);
 
 
     return (
