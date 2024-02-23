@@ -3,6 +3,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import Resume from '../../assets/Files/YusefTohamy-Resume.pdf'
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -19,6 +20,7 @@ const Home = () => {
 
 
     return (
+        <>
         <div className="container home-page"> 
             <div className="text-zone">
                 <h1>
@@ -45,6 +47,8 @@ const Home = () => {
                 <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/playlist/0Kdjb5J2fFZWtKnCx2cBQb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
             </div>
         </div>
+        <Loader type="ball-pulse" />
+        </>
     );
 }
 

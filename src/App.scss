@@ -1,6 +1,7 @@
 $primary-color: #ffff;
 
 @import'animate.css';
+@import '~loaders.css/src/animations/ball-pulse.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -14,10 +15,24 @@ $primary-color: #ffff;
 
 @font-face {
   font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2'), url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
 }
 
 input,
 textarea {
   font-family: 'Hellvetica Neue';
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 0.75s 0.75s;
+  animation-fill-mode: forwards;
 }

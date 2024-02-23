@@ -98,13 +98,6 @@
         background: none;
     }
 
-    @media (min-width: 768px) {
-        .contact-link, .resume-link {
-            font-size: 24px;
-            min-width: 196px;
-        }
-    }
-
     .iframe1 {
         width: 300px;
         height: 300px;
@@ -123,26 +116,5 @@
         margin-top: 5%;
         width: 300px;
         height: 352px;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .tags, .home-page h1:before, .home-page h1:after {
-            display: none;
-        }
-
-        .home-page .text-zone {
-            position: initial;
-            width: 100%;
-            transform: none;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        .home-page .contact-link, .home-page .resume-link {
-            float: none;
-            display: block;
-            margin: 20px auto;
-            width: auto;
-        }
     }
 }
