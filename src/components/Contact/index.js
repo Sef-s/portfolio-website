@@ -27,10 +27,10 @@ const Contact = () => {
                         <form>
                             <ul>
                                 <li className='half'>
-                                    <input type="text" name="name" placeholder="Name" />
+                                    <input type="text" name="name" placeholder="Name" required/>
                                 </li>
                                 <li className='half'>
-                                    <input type="email" name="email" placeholder="Email" />
+                                    <input type="email" name="email" placeholder="Email" required/>
                                 </li>
                                 <li>
                                     <input placeholder="Subject" type="text" name="subject" required />
@@ -39,7 +39,9 @@ const Contact = () => {
                                     <textarea placeholder="Message" name="message" required></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className='flat-button' value="SEND" />
+                                    <div className='button-wrapper'>
+                                            <button type="submit" className='flat-button'>SEND</button>
+                                    </div>
                                 </li>
                             </ul>
                         </form>

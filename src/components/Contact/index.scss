@@ -48,27 +48,49 @@
         background: white;
         height: 50px;
         font-size: 16px;
-        color: #fff;
+        color: black;
         padding: 20px;
         box-sizing: border-box;
         min-height: 150px;
       }
-
-
-      .flat-button {
-        background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-        font-size: 11px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #ffd700;
-        float: left;
-        border-radius: 4px;
-        background: 0 0;
-        text-transform: uppercase;                                                                            
+    
+    .button-wrapper {
         float: right;
-        text-align: center;
-        margin-right: 10px;
-      }
-
+        display: inline-flex;
+        border-radius: 8px;
+        padding: 4px;
+        background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        margin-top: 25px;
+        margin-right: 20px;
+        cursor: pointer; // Ensure the wrapper also shows a pointer cursor
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    
+        // Hover effect for the wrapper
+        &:hover .flat-button {
+            background-color: transparent; // Reveal the gradient on hover
+            color: #FFFFFF; // Keep the text color consistent
+        }
+    }
+    
+    .flat-button {
+        background-color: rgb(5, 6, 45); // Initially black
+        color: #FFFFFF;
+        border: 0;
+        border-radius: 7px; // Slightly smaller to fit inside the wrapper
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        padding: 16px 24px;
+        font-family: 'Coolvetica';
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 300ms ease, color 300ms ease; // Smooth transition for background and text color
+    
+        // This hover effect is now handled by the wrapper
+    }            
 }

@@ -43,9 +43,6 @@ const Home = () => {
                     <span class="text">RESUME</span>
                 </a>
             </div>
-            <div className="iframe-container">
-                <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/playlist/0Kdjb5J2fFZWtKnCx2cBQb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" />
-            </div>
         </div>
         <Loader type="ball-pulse" />
         </>
