@@ -37,10 +37,10 @@ const Home = () => {
                 </h1>
                 <h2>Backend Developer / Python Engineer / Entrepreneur</h2>
                 <Link to="/contact" className="contact-link" role="button">
-                    <span class="text">CONTACT ME</span>
+                    <span className="text">CONTACT ME</span>
                 </Link>
                 <a href={Resume} className="resume-link" download="YusefTohamy-Resume.pdf" role="button">
-                    <span class="text">RESUME</span>
+                    <span className="text">RESUME</span>
                 </a>
             </div>
         </div>

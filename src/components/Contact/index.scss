@@ -41,7 +41,9 @@
         color: black;
         padding: 0 20px;
         box-sizing: border-box;
+        border-radius: 7px;
     }
+    
     textarea {
         width: 100%;
         border: 0;
@@ -52,6 +54,7 @@
         padding: 20px;
         box-sizing: border-box;
         min-height: 150px;
+        border-radius: 7px;
       }
     
     .button-wrapper {
@@ -92,5 +95,75 @@
         transition: background-color 300ms ease, color 300ms ease; // Smooth transition for background and text color
     
         // This hover effect is now handled by the wrapper
-    }            
+    }
 }
+
+.map-wrap {
+    background: rgba(8, 253, 216, 0.1);
+    float: right;
+    width: 53%;
+    height: 115%;
+    margin-top: -3%;
+}
+  
+.leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+
+.card {
+    width: 190px; /* Smaller width */
+    height: 254px; /* Smaller height */
+    background: #07182E;
+    position: absolute; /* Use absolute positioning to place it similarly to .info-map */
+    top: 50px; /* Same as .info-map */
+    right: 30%; /* Same as .info-map */
+    z-index: 999999; /* Same as .info-map to ensure it stacks on top if needed */
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    opacity: 0; /* If you want to fade it in, otherwise set to 1 */
+    animation: fadeIn 1s 1.5s; /* If you want to animate the entrance */
+    animation-fill-mode: forwards;
+}
+
+.card h2 {
+    z-index: 2; /* Increase z-index to ensure the text appears above the pseudo-elements */
+    color: white;
+    font-size: 15px;
+}
+  
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+  
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+}  
