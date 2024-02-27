@@ -9,7 +9,7 @@
     }
 
     h1 {
-        color: #FFFFF0;
+        color: #FBFBFB;
         letter-spacing: normal;
         font-size: 53px;
         margin: 0;
@@ -19,7 +19,7 @@
 
         &::before {
             font-family: 'La Belle Aurore';
-            color: #0D1717;
+            color: #0C0C0C;
             font-size: 18px;
             position: absolute;
             margin-top: -40px;
@@ -29,7 +29,7 @@
 
         &::after {
             font-family: 'La Belle Aurore';
-            color: black;
+            color: #0C0C0C;
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
@@ -40,7 +40,7 @@
     }
 
     h2 {
-        color: #FFFFF0;
+        color: #FBFBFB;
         margin-top: 20px;
         font-weight: bold;
         font-size: 11px;
@@ -57,7 +57,7 @@
         border-radius: 8px;
         box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
         box-sizing: border-box;
-        color: #FFFFF0;
+        color: #FBFBFB;
         display: inline-flex;
         font-family: 'Coolvetica';
         font-size: 20px;

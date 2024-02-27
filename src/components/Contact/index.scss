@@ -35,10 +35,10 @@
     input[type='text'], input[type='email'] {
         width: 100%;
         border: 0;
-        background: #FFFFF0;
+        background: #FBFBFB;
         height: 50px;
         font-size: 16px;
-        color: #0D1717;
+        color: #0C0C0C;
         padding: 0 20px;
         box-sizing: border-box;
         border-radius: 7px;
@@ -47,10 +47,10 @@
     textarea {
         width: 100%;
         border: 0;
-        background: #FFFFF0;
+        background: #FBFBFB;
         height: 50px;
         font-size: 16px;
-        color: #0D1717;
+        color: #0C0C0C;
         padding: 20px;
         box-sizing: border-box;
         min-height: 150px;
@@ -75,13 +75,13 @@
         // Hover effect for the wrapper
         &:hover .flat-button {
             background-color: transparent; // Reveal the gradient on hover
-            color: #FFFFF0; // Keep the text color consistent
+            color: #FBFBFB; // Keep the text color consistent
         }
     }
     
     .flat-button {
         background-color: rgb(5, 6, 45); // Initially black
-        color: #FFFFF0;
+        color: #FBFBFB;
         border: 0;
         border-radius: 7px; // Slightly smaller to fit inside the wrapper
         display: flex;
@@ -138,7 +138,7 @@
     font-size: 10px;
     width: 100%;
     height: 100%;
-    color: #FFFFF0; /* Assuming you want white text */
+    color: #FBFBFB; /* Assuming you want white text */
     padding: 20px; /* Add padding if you want some space inside the card */
     box-sizing: border-box; /* Include padding in width and height calculations */
   }

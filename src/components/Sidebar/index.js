@@ -13,37 +13,37 @@ const Sidebar = () => (
         </Link>
         <nav>
             <NavLink exact="true" activeclassname="active" to="/">
-                    <FontAwesomeIcon icon={faHome} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faHome} color="#FBFBFB" />
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills">
-                    <FontAwesomeIcon icon={faGear} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faGear} color="#FBFBFB" />
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faEnvelope} color="#FBFBFB" />
             </NavLink>  
             <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
-                    <FontAwesomeIcon icon={faUser} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faUser} color="#FBFBFB" />
             </NavLink> 
         </nav>
         <ul>
             <li>
                 <a target="_blank" rel='noreferer' href='https://www.linkedin.com/in/yuseftohamy/'>
-                    <FontAwesomeIcon icon={faLinkedin} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faLinkedin} color="#FBFBFB" />
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferer' href='https://github.com/Sef-s'>
-                    <FontAwesomeIcon icon={faGithub} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faGithub} color="#FBFBFB" />
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferer' href='https://www.instagram.com/yusef.t/'>
-                    <FontAwesomeIcon icon={faInstagram} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faInstagram} color="#FBFBFB" />
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferer' href='https://open.spotify.com/user/0hzbdvn9dm263s5fdfbg3h5be'>
-                    <FontAwesomeIcon icon={faSpotify} color="#FFFFF0" />
+                    <FontAwesomeIcon icon={faSpotify} color="#FBFBFB" />
                 </a>
             </li>
         </ul>
