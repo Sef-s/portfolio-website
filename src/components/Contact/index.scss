@@ -131,17 +131,6 @@
     animation: backInRight 1s 1.2s; /* Use the same animation as the map with a delayed start time */
     animation-fill-mode: forwards;
   }
-  
-  .card__content {
-    background: rgb(5, 6, 45);
-    border-radius: 17px;
-    font-size: 10px;
-    width: 100%;
-    height: 100%;
-    color: #FBFBFB; /* Assuming you want white text */
-    padding: 20px; /* Add padding if you want some space inside the card */
-    box-sizing: border-box; /* Include padding in width and height calculations */
-  }
 
   @keyframes backInRight {
     0% {

@@ -70,15 +70,6 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div className="card">
-                    <div className="card__content">
-                        <h2>Yusef Tohamy <br/>
-                            1801 N Broad St,<br/>
-                            Philadelphia, PA 19122<br/>
-                            yuseftohamyy@gmail.com
-                        </h2>
-                    </div>
-                </div>
                 <div className="map-wrap">
                     <MapContainer center={[39.98165190585044, -75.15540913178684]} zoom={13}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

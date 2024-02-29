@@ -9,9 +9,23 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #0C0C0C;
-  background: radial-gradient(circle at top left, #690893, #4046ed);
-  background-attachment: fixed;  overflow: hidden;
+  background: linear-gradient(-45deg, #ee7752, #ae3ce7, #23a6d5, #23d5ab);  
+  background-size: 400% 400%;
   display: block;
+  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
