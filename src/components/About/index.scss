@@ -1,5 +1,5 @@
 p {
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Coolvetica';
     color: #FBFBFB;
     letter-spacing: 0.75px;
@@ -76,6 +76,11 @@ p {
       right: 0;
       overflow: hidden;
   }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+}
 
   @keyframes spincube {
     from,

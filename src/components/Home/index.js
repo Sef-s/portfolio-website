@@ -33,7 +33,7 @@ const Home = () => {
                 <span className={`${letterClass} _16 text-animate-m`}>m</span>
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={17} />
                 <br />
-                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={18} />
+                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={16} />
                 </h1>
                 <h2>Backend Developer / Python Engineer / Entrepreneur</h2>
                 <Link to="/contact" className="contact-link" role="button">
